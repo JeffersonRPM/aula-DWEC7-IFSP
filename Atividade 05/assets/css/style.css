@@ -1,0 +1,79 @@
+:root {
+    --white-color: white;
+    --darkgray-color: #0F0F0F;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    background-color: var(--darkgray-color);
+    color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-bg {   
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.margin-li {
+    margin-left: 2%;
+}
+
+.ajuste-img-parque {
+    height: 380px;
+    width: 100%;
+}

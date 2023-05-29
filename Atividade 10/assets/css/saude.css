@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header, main{
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 30px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-voltar {
+    height: 50px;
+    width: 50px;
+    margin: 30px 0 0 30px;
+    position: fixed;
+}

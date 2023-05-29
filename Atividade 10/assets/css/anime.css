@@ -1,0 +1,39 @@
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.btn-voltar {
+    height: 50px;
+    width: 50px;
+    margin: 30px 0 0 30px;
+    position: fixed;
+}
+
+.alinhando-tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

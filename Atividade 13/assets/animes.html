@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="min-vh-100">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+                <img id="home" class="d-inline-block align-top" src="./img/home.png"
+                    alt="Imagem de uma casa, volta para o começo da página">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse font-weight-bold" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./neve.html">Neve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Animes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark"
+                            href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+                            target="_blank">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Digite para pesquisar"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron bg-danger text-light">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4">Animes</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table table-bordered mb-4">
+            <div class="thead-dark">
+                <tr>
+                    <th class="text-center">Título</th>
+                    <th class="text-center">Ano</th>
+                    <th class="text-center">Estúdio</th>
+                </tr>
+            </div>
+    
+            <tr>
+                <td class="text-center">My Hero Academia</td>
+                <td class="text-center">2016</td>
+                <td class="text-center">Bones</td>
+            </tr>
+            
+            <tr>
+                <td class="text-center">Attack on Titan</td>
+                <td class="text-center">2013</td>
+                <td class="text-center">Wit Studio</td>
+            </tr>
+    
+            <tr>
+                <td class="text-center">Fullmetal Alchemist: Brotherhood</td>
+                <td class="text-center">2009</td>
+                <td class="text-center">Bones</td>
+            </tr>
+            <tr>
+                <td class="text-center">Death Note</td>
+                <td class="text-center">2006</td>
+                <td class="text-center">Madhouse</td>
+            </tr>
+            <tr>
+                <td class="text-center">Naruto</td>
+                <td class="text-center">2002</td>
+                <td class="text-center">Pierrot</td>
+            </tr>
+            <tr>
+                <td class="text-center">One Piece</td>
+                <td class="text-center">1999</td>
+                <td class="text-center">Toei Animation</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./img/mha.jpe" alt="My Hero Academia">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/aot.jpg" alt="Attack on Titan">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/fma.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/dtn.jpg" alt="Death Note">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/nrt.jpg" alt="Naruto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/onp.jpg" alt="One Piece">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <br>
+
+    <footer class="bg-dark text-light py-2">
+        <div class="container d-flex align-items-center justify-content-center">
+            <p class="m-0">Jefferson Roberto Piaia Martines - PC3015602</p>
+        </div>
+    </footer>
+</body>
+
+</html>

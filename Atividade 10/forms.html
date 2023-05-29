@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./assets/css/forms.css">
+</head>
+
+<body>
+    <a href="./index.html"><img class="btn-voltar" src="./assets/img/volta.png"
+            alt="Botão para voltar para página principal."></a>
+    <br><br>
+    <main>
+        <form action="processa_form.php" method="post">
+            <label class="titulos" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label class="titulos" for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+
+            <label class="titulos" for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br>
+
+            <label class="titulos" for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required><br>
+
+            <label class="titulos" for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino" required>
+            <label for="feminino">Feminino</label>
+            <br><br>
+
+            <label class="titulos" for="estado_civil">Estado Civil:</label>
+            <input type="radio" id="solteiro" name="estado_civil" value="solteiro" required>
+            <label for="solteiro">Solteiro</label>
+            <input type="radio" id="casado" name="estado_civil" value="casado" required>
+            <label for="casado">Casado</label>
+            <input type="radio" id="divorciado" name="estado_civil" value="divorciado" required>
+            <label for="divorciado">Divorciado</label>
+            <input type="radio" id="viuvo" name="estado_civil" value="viuvo" required>
+            <label for="viuvo">Viúvo</label>
+            <br><br>
+
+            <label class="titulos" for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="Enviar">
+    </main>
+</body>
+
+</html>

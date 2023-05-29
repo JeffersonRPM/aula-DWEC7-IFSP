@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="min-vh-100">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+                <img id="home" class="d-inline-block align-top" src="./img/home.png"
+                    alt="Imagem de uma casa, volta para o começo da página">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse font-weight-bold" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./venda.html">Venda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./aluguel.html">Aluguel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="https://www.friasneto.com.br" target="_blank">Saiba Mais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Digite para pesquisar"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron bg-dark text-light">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4">Formulário de Contato</h1>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="assunto">Assunto:</label>
+                        <input type="text" class="form-control" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer class="bg-dark text-light py-2 fixed-bottom">
+        <div class="container d-flex align-items-center justify-content-center">
+            <h3 class="m-0">Jefferson Roberto Piaia Martines - PC3015602</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

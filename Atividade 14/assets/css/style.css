@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+#home {
+    width: 45px;
+    height: 40px;
+}
+
+#myCarousel img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+
+footer p {
+    font-size: 1.25rem;
+}
+
+.bt-color {
+    color: #563d7c !important;
+}
+
+#div-home img {
+    width: 80% !important;
+    height: 80% !important;
+    border-radius: 15px;
+}

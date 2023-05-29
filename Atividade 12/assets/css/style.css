@@ -1,0 +1,19 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 5px;
+}

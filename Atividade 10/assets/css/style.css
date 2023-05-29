@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+ul {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-voltar {
+    height: 50px;
+    width: 50px;
+    margin: 30px 0 0 30px;
+    position: fixed;
+}

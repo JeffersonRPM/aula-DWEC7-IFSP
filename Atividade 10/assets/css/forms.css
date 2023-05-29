@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+label[for="masculino"],
+label[for="feminino"],
+label[for="solteiro"],
+label[for="casado"],
+label[for="divorciado"],
+label[for="viuvo"],
+label[for="videogame"],
+label[for="video_rede_social"],
+label[for="compra_internet"],
+label[for="compra_internet"],
+label[for="usa_banco_internet"] {
+    display: inline !important;
+}
+
+.titulos {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.btn-voltar {
+    height: 50px;
+    width: 50px;
+    margin: 30px 0 0 30px;
+    position: fixed;
+}
+
+main{
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
+}
