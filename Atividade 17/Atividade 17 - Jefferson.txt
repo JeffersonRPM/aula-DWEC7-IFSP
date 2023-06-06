@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Objeto de documento de janela</h1>
+<h2>A propriedade de URL</h2>
+
+<p id="demo"></p>
+
+<script>
+let url = window.document.URL;
+document.getElementById("demo").innerHTML = url;
+</script>
+
+</body>
+</html>
+
+<!-- 
+
+saída: 
+Objeto de documento de janela
+A propriedade de URL
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_doc_url1
+
+
+accessKey - Define ou retorna o atributo accesskey de um elemento.
+addEventListener() - Anexa um manipulador de evento a um elemento.
+appendChild() - Adiciona (anexa) um novo nó filho a um elemento.
+attributes - Retorna um NamedNodeMap dos atributos de um elemento.
+blur() - Remove o foco de um elemento.
+childElementCount - Retorna o número de elementos filhos de um elemento.
+childNodes - Retorna um NodeList dos nós filhos de um elemento.
+children - Retorna uma HTMLCollection dos elementos filhos de um elemento.
+classList - Retorna o(s) nome(s) da(s) classe(s) de um elemento.
+className - Define ou retorna o valor do atributo class de um elemento.
+click() - Simula um clique de mouse em um elemento.
+clientHeight - Retorna a altura de um elemento, incluindo o preenchimento (padding).
+clientLeft - Retorna a largura da borda esquerda de um elemento.
+clientTop - Retorna a largura da borda superior de um elemento.
+clientWidth - Retorna a largura de um elemento, incluindo o preenchimento (padding).
+cloneNode() - Clona um elemento.
+closest() - Procura na árvore DOM o elemento mais próximo que corresponda a um seletor CSS.
+compareDocumentPosition() - Compara a posição do documento de dois elementos.
+contains() - Retorna verdadeiro se um nó é descendente de outro nó.
+contentEditable - Define ou retorna se o conteúdo de um elemento é editável ou não.
+dir - Define ou retorna o valor do atributo dir de um elemento.
+firstChild - Retorna o primeiro nó filho de um elemento.
+firstElementChild - Retorna o primeiro elemento filho de um elemento.
+focus() - Dá foco a um elemento.
+getAttribute() - Retorna o valor de um atributo de um elemento.
+getAttributeNode() - Retorna um nó de atributo.
+getBoundingClientRect() - Retorna o tamanho de um elemento e sua posição em relação à janela de visualização (viewport).
+getElementsByClassName() - Retorna uma coleção de elementos filhos com um determinado nome de classe.
+getElementsByTagName() - Retorna uma coleção de elementos filhos com um determinado nome de tag.
+hasAttribute() - Retorna verdadeiro se um elemento tem um determinado atributo.
+hasAttributes() - Retorna verdadeiro se um elemento possui atributos.
+hasChildNodes() - Retorna verdadeiro se um elemento tem nós filhos.
+id - Define ou retorna o valor do atributo id de um elemento.
+innerHTML - Define ou retorna o conteúdo de um elemento.
+innerText - Define ou retorna o conteúdo de texto de um nó e seus descendentes.
+insertAdjacentElement() - Insere um novo elemento HTML em uma posição relativa a um elemento.
+insertAdjacentHTML() - Insere um texto formatado em HTML em uma posição relativa a um elemento.
+insertAdjacentText() - Insere texto em uma posição relativa a um elemento.
+insertBefore() - Insere um novo nó filho antes de um nó filho existente.
+isContentEditable - Retorna verdadeiro se o conteúdo de um elemento for editável.
+isDefaultNamespace() - Retorna verdadeiro se um determinado namespaceURI for o namespace padrão.
+isEqualNode() - Verifica se dois elementos são iguais.
+isSameNode() - Verifica se dois elementos são o mesmo nó.
+isSupported() - Obsoleto.
+lang - Define ou retorna o valor do atributo lang de um elemento.
+lastChild - Retorna o último nó filho de um elemento.
+lastElementChild - Retorna o último elemento filho de um elemento.
+matches() - Retorna verdadeiro se um elemento corresponder a um seletor CSS fornecido.
+namespaceURI - Retorna o namespace URI de um elemento.
+nextSibling - Retorna o próximo nó no mesmo nível da árvore de nós.
+nextElementSibling - Retorna o próximo elemento no mesmo nível da árvore de nós.
+nodeName - Retorna o nome de um nó.
+nodeType - Retorna o tipo de nó de um nó.
+nodeValue - Define ou retorna o valor de um nó.
+normalize() - Une nós de texto adjacentes e remove nós de texto vazios em um elemento.
+offsetHeight - Retorna a altura de um elemento, incluindo preenchimento (padding), borda e barra de rolagem.
+offsetWidth - Retorna a largura de um elemento, incluindo preenchimento (padding), borda e barra de rolagem.
+offsetLeft - Retorna a posição horizontal de deslocamento de um elemento.
+offsetParent - Retorna o elemento de deslocamento de um elemento.
+offsetTop - Retorna a posição vertical de deslocamento de um elemento.
+outerHTML - Define ou retorna o conteúdo de um elemento (incluindo a tag de início e a tag de fim).
+outerText - Define ou retorna o conteúdo de texto externo de um nó e seus descendentes.
+ownerDocument - Retorna o elemento raiz (objeto de documento) para um elemento.
+parentNode - Retorna o nó pai de um elemento.
+parentElement - Retorna o elemento pai de um elemento.
+previousSibling - Retorna o nó anterior no mesmo nível da árvore de nós.
+previousElementSibling - Retorna o elemento anterior no mesmo nível da árvore de nós.
+querySelector() - Retorna o primeiro elemento filho que corresponde a um seletor CSS.
+querySelectorAll() - Retorna todos os elementos filhos que correspondem a um seletor CSS.
+remove() - Remove um elemento do DOM.
+removeAttribute() - Remove um atributo de um elemento.
+removeAttributeNode() - Remove um nó de atributo e retorna o nó removido.
+removeChild() - Remove um nó filho de um elemento.
+removeEventListener() - Remove um manipulador de eventos que foi anexado com o método addEventListener().
+replaceChild() - Substitui um nó filho em um elemento.
+scrollHeight - Retorna a altura total de um elemento, incluindo preenchimento (padding).
+scrollIntoView() - Faz com que um elemento seja rolado para a área visível da janela do navegador.
+scrollLeft - Define ou retorna o número de pixels que o conteúdo de um elemento está rolado horizontalmente.
+scrollTop - Define ou retorna o número de pixels que o conteúdo de um elemento está rolado verticalmente.
+scrollWidth - Retorna a largura total de um elemento, incluindo preenchimento (padding).
+setAttribute() - Define ou altera o valor de um atributo.
+setAttributeNode() - Define ou altera um nó de atributo.
+style - Define ou retorna o valor do atributo de estilo de um elemento.
+tabIndex - Define ou retorna o valor do atributo tabindex de um elemento.
+tagName - Retorna o nome da tag de um elemento.
+textContent - Define ou retorna o conteúdo textual de um nó e seus descendentes.
+title - Define ou retorna o valor do atributo title de um elemento.
+toString() - Converte um elemento para uma string.
+
+getNamedItem() - Retorna um nó de atributo (por nome) de um NamedNodeMap.
+item() - Retorna um nó de atributo (por índice) de um NamedNodeMap.
+length - Retorna o número de atributos em um NamedNodeMap.
+removeNamedItem() - Remove um atributo (nó).
+setNamedItem() - Define um atributo (nó) pelo nome.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto HTMLCollection</h1>
+
+<p>O getElementsByTagName() retorna:</p>
+<p id="demo"></p>
+
+<script>
+const elements = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = elements;
+</script>
+
+</body>
+</html>
+
+saída:
+O objeto HTMLCollection
+
+O getElementsByTagName() retorna:
+
+[object HTMLCollection]
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto HTMLCollection</h1>
+<h2>A propriedade de comprimento</h2>
+
+<p>O número de parágrafos (p elementos) são:</p>
+<p id="demo"></p>
+
+<script>
+const elements = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = elements.length;
+</script>
+
+</body>
+</html>
+
+saída:
+O objeto HTMLCollection
+A propriedade de comprimento
+
+O número de parágrafos (p elementos) são:
+
+2
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto HTMLCollection</h1>
+<h2>A propriedade de comprimento</h2>
+
+<p>As tags neste documento são:</p>
+<p id="demo"></p>
+
+<script>
+const elements = document.getElementsByTagName("*");
+let text = "";
+for (let i = 0; i < elements.length; i++) {
+  text += elements[i].tagName + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+saída:
+O objeto HTMLCollection
+A propriedade de comprimento
+
+As tags neste documento são:
+
+HTML
+HEAD
+BODY
+H1
+H2
+P
+P
+SCRIPT
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM NodeList</h1>
+
+<p>Olá, mundo!</p>
+<p>Olá Noruega!</p>
+
+<p id="demo"></p>
+
+<script>
+const myNodelist = document.querySelectorAll("p");
+
+document.getElementById("demo").innerHTML = "O innerHTML do segundo parágrafo é:" + myNodelist[1].innerHTML;
+
+</script>
+
+</body>
+</html>
+
+saída:
+HTML DOM NodeList
+
+Olá, mundo!
+
+Olá Noruega!
+
+O innerHTML do segundo parágrafo é:Olá Noruega!
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM NodeList</h1>
+<p>Olá, mundo!</p>
+<p>Olá Noruega!</p>
+
+<p id="demo"></p>
+
+<script>
+const myNodelist = document.querySelectorAll("p");
+document.getElementById("demo").innerHTML = "Este documento contém " + myNodelist.length + " paragrafos.";
+</script>
+
+</body>
+</html>
+
+saída:
+HTML DOM NodeList
+
+Olá, mundo!
+
+Olá Noruega!
+
+Este documento contém 3 paragrafos.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Olá, mundo!</p>
+
+<p>Olá Noruega!</p>
+
+<p>Clique no botão para alterar a cor de todos os elementos p.</p>
+
+<button onclick="myFunction()">Tente</button>
+
+<script>
+function myFunction() {
+  const myNodelist = document.querySelectorAll("p");
+  for (let i = 0; i < myNodelist.length; i++) {
+    myNodelist[i].style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>
+
+saída:
+JavaScript HTML DOM
+
+Olá, mundo!
+
+Olá Noruega!
+
+Clique no botão para alterar a cor de todos os elementos p.
+
+<!DOCTYPE html>
+<html>
+<style>
+.myStyle {
+  background-color: coral;
+  padding: 16px;
+}
+</style>
+
+<body>
+<h1>O objeto DOMToken</h1>
+<h2>O método add()</h2>
+
+<button onclick="myFunction()">Adicionar</button>
+<p>Clique em "Adicionar" para adicionar a classe "myStyle" a myDIV.</p>
+
+<div id="myDIV">
+<p>Eu sou um myDIV.</p>
+</div>
+
+<script>
+function myFunction() {
+  const list = document.getElementById("myDIV").classList;
+  list.add("myStyle");
+}
+</script>
+
+</body>
+</html>
+
+saída:
+O objeto DOMToken
+O método add()
+
+Clique em "Adicionar" para adicionar a classe "myStyle" a myDIV.
+
+Eu sou um myDIV.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: yellow; 
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<p>Clique no botão para exibir as propriedades de estilo deste documento.</p>
+
+<button onclick="myFunction()">Tente</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("STYLE")[0];
+  document.getElementById("demo").innerHTML = x.innerHTML;
+}
+</script>
+
+</body>
+</html>
+
+saída:
+Clique no botão para exibir as propriedades de estilo deste documento.
+body { background-color: yellow; color: red; } 
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="myH1" style="color:red">Meu Cabeçalho</h1>
+
+<p>Clique no botão para obter a propriedade de estilo do elemento H1.</p>
+
+<button onclick="myFunction()">Tente</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myH1").style.color;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
+
+saída:
+Meu Cabeçalho
+
+Clique no botão para obter a propriedade de estilo do elemento H1.
+red
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p>Clique no botão para criar um elemento STYLE e coloque-o na seção principal.</p>
+
+<button onclick="myFunction()">Tente</button>
+
+<p>O elemento de estilo criado contém declarações CSS que irão alterar as propriedades da fonte deste documento.</p>
+
+<script>
+function myFunction() {
+  var x = document.createElement("STYLE");
+  var t = document.createTextNode("body {font: 20px verdana;}");
+  x.appendChild(t);
+  document.head.appendChild(x);
+}
+</script>
+
+</body>
+</html>
+
+saída:
+Clique no botão para criar um elemento STYLE e coloque-o na seção principal.
+O elemento de estilo criado contém declarações CSS que irão alterar as propriedades da fonte deste documento.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="myH1">Como alterar o estilo de um cabeçalho</h1>
+
+<p>Clique no botão para alterar o estilo do elemento H1.</p>
+
+<button onclick="myFunction()">Tente</button>
+
+<script>
+function myFunction() {
+  document.getElementById("myH1").style.color = "red";
+}
+</script>
+
+</body>
+</html>
+
+saída:
+Como alterar o estilo de um cabeçalho
+
+Clique no botão para alterar o estilo do elemento H1.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto do console</h1>
+<h2>O método error()</h2>
+<p>Lembre-se de abrir o console (pressione F12) antes de clicar em "Executar".</p>
+
+<script>
+window.console.error("Você cometeu um erro");
+</script>
+
+</body>
+</html>
+
+saída:
+O objeto do console
+O método error()
+
+Lembre-se de abrir o console (pressione F12) antes de clicar em "Executar".
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Tela cheia com JavaScript</h2>
+<p>Clique no botão para abrir o vídeo no modo de tela cheia.</p>
+<button onclick="openFullscreen();">Abrir vídeo no modo de tela cheia</button>
+<p><strong>Dica:</strong> pressione a tecla "Esc" para sair da tela inteira.</p>
+
+<video width="100%" controls id="myvideo">
+  <source src="rain.mp4" type="video/mp4">
+  <source src="rain.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+/* Get the element you want displayed in fullscreen */ 
+var elem = document.getElementById("myvideo");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
+</body>
+</html>
+
+saída:
+Tela cheia com JavaScript
+
+Clique no botão para abrir o vídeo no modo de tela cheia.
+
+Dica: pressione a tecla "Esc" para sair da tela inteira.
+
+
+
+coordinates - Retorna a posição e altitude do dispositivo na Terra
+position - Retorna a posição do dispositivo em questão em um determinado momento
+positionError - Retorna o motivo de um erro ocorrido ao usar o dispositivo de geolocalização
+positionOptions - Descreve um objeto contendo propriedades de opção para passar como parâmetro de Geolocation.getCurrentPosition() e Geolocation.watchPosition()
+clearWatch() - Cancela o registro dos manipuladores de monitoramento de localização/erro previamente instalados usando Geolocation.watchPosition()
+getCurrentPosition() - Retorna a posição atual do dispositivo
+watchPosition() - Retorna um valor de ID de monitoramento que pode ser usado posteriormente para cancelar o manipulador, passando-o para o método Geolocation.clearWatch()
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto de histórico da janela</h1>
+<h2>A propriedade history.length</h2>
+
+<p>Número de URLs na lista de histórico:</p>
+<p id="demo"></p>
+
+<p>Como este é um novo quadro de janela, history.length sempre retornará 1.</p>
+
+<script>
+let length = history.length;
+document.getElementById("demo").innerHTML = length;
+</script>
+
+</body>
+</html>
+
+saída:
+O objeto de histórico da janela
+A propriedade history.length
+
+Número de URLs na lista de histórico:
+
+2
+
+Como este é um novo quadro de janela, history.length sempre retornará 1.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O Objeto Janela</h1>
+<h2>O método matchMedia()</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+if (window.matchMedia("(max-width: 700px)").matches) {
+  text = "A tela é menor ou igual a 700 pixels de largura.";
+} else {
+  text = "A tela tem pelo menos 700 pixels de largura.";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+saída:
+O Objeto Janela
+O método matchMedia()
+
+A tela é menor ou igual a 700 pixels de largura.
+
+
+
+clear() - Esvazia todas as chaves do armazenamento
+getItem() - Retorna o valor do nome da chave especificada
+key() - Retorna o nome da chave n-ésima no armazenamento
+length - Retorna o número de itens de dados armazenados no objeto Storage
+setItem() - Adiciona uma chave ao armazenamento ou atualiza o valor de uma chave se ela já existir
+removeItem() - Remove uma chave do armazenamento
+window.localStorage - Permite salvar pares de chave/valor em um navegador da web. Armazena os dados sem data de expiração
+window.sessionStorage - Permite salvar pares de chave/valor em um navegador da web. Armazena os dados para uma sessão
+
+
+ -->
+
+
+
