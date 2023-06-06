@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+<html lang=pt-br>
+
+<head>
+    <title> Exercício dia 14 </title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <h1>
+        <font color="#FF0000"> Formulário:
+	<!-- Define a cor da palavra Formulário para vermelho usando o valor hexadecimal #FF0000 -->
+    </h1>
+    <form action="/action_page.php">
+    <!-- Inicia um formulário com o atributo action definido como "/action_page.php". Isso significa que quando o formulário for enviado, os dados serão enviados para "/action_page.php". -->
+
+        <font color="#151515">
+	    <!-- Define a cor dos paragráfos para preto usando o valor hexadecimal #151515 -->
+            <p> Nome: <input type="text" id="nome" onfocus="myFunction(this.id) " onblur="Function(this.id)"> </p>
+	    <!-- O campo de entrada possui um atributo id definido como "nome" e os eventos onfocus e onblur são atribuídos a ele. Quando o campo ganha ou perde o foco, as funções myFunction e Function são chamadas passando o id do campo como parâmetro. Caso o campo esteja em foco ficará vermelho, fora de foco ficará branco. -->
+
+            <br>
+
+            <p> Endereço: <input type="text" id="endereco" onfocus="myFunction(this.id)" onblur="Function(this.id)">
+            </p>
+
+            <br>
+
+            <p> Cidade: <input type="text" id="cidade" onfocus="myFunction(this.id)" onblur="Function(this.id)">
+            </p>
+
+            <br>
+
+            <p> Estado: <input type="text" id="estado" onfocus="myFunction(this.id)" onblur="Function(this.id)">
+            </p>
+
+            <br>
+
+            <p> Gênero: <input type="text" id="genero" onfocus="myFunction(this.id)" onblur="Function(this.id)">
+            </p>
+
+            <br>
+
+            <p> Idade: <input type="text" id="idade" onfocus="myFunction(this.id)" onblur="Function(this.id)"> </p>
+    </form>
+
+    <script>
+        function myFunction(x) {
+
+            document.getElementById(x).style.background = "red";
+ 	    <!-- Ao chamar essa função o fundo ficará vermelho. -->
+
+        }
+
+        function Function(y) {
+	    
+            // Ao chamar essa função o fundo ficará branco e o texto ficará todo maiúsuclo. 
+            document.getElementById(y).style.background = "white";
+
+            var x = document.getElementById("nome");
+
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("endereco");
+
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("cidade");
+
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("estado");
+
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("genero");
+
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("idade");
+
+            x.value = x.value.toUpperCase();
+
+        }
+    </script>
+    <p> </p>
+</body>
+
+</html>
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+
+<p>O objeto Array é usado para armazenar vários valores em uma única variável</p>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+saída: 
+JavaScript Arrays
+
+O objeto Array é usado para armazenar vários valores em uma única variável:
+
+Saab,Volvo,BMW
+
+at() - Retorna um elemento indexado de um array.
+concat() - Une arrays e retorna um novo array com os arrays unidos.
+constructor - Retorna a função que criou o protótipo do objeto Array.
+copyWithin() - Copia elementos do array dentro do próprio array, para posições especificadas.
+entries() - Retorna um objeto de iteração de pares chave/valor do array.
+every() - Verifica se todos os elementos de um array passam em um teste.
+fill() - Preenche os elementos de um array com um valor estático.
+filter() - Cria um novo array com todos os elementos que passam em um teste.
+find() - Retorna o valor do primeiro elemento de um array que passa em um teste.
+findIndex() - Retorna o índice do primeiro elemento de um array que passa em um teste.
+flat() - Concatena os elementos de subarrays.
+flatMap() - Mapeia todos os elementos de um array e cria um novo array plano.
+forEach() - Chama uma função para cada elemento do array.
+from() - Cria um array a partir de um objeto.
+includes() - Verifica se um array contém o elemento especificado.
+indexOf() - Procura o array por um elemento e retorna sua posição.
+isArray() - Verifica se um objeto é um array.
+join() - Junta todos os elementos de um array em uma string.
+keys() - Retorna um objeto de iteração com as chaves do array original.
+lastIndexOf() - Procura o array por um elemento, começando pelo final, e retorna sua posição.
+length - Define ou retorna o número de elementos em um array.
+map() - Cria um novo array com o resultado de chamar uma função para cada elemento do array.
+pop() - Remove o último elemento de um array e retorna esse elemento.
+prototype - Permite adicionar propriedades e métodos a um objeto Array.
+push() - Adiciona novos elementos ao final de um array e retorna o novo comprimento.
+reduce() - Reduz os valores de um array a um único valor (da esquerda para a direita).
+reduceRight() - Reduz os valores de um array a um único valor (da direita para a esquerda).
+reverse() - Inverte a ordem dos elementos em um array.
+shift() - Remove o primeiro elemento de um array e retorna esse elemento.
+slice() - Seleciona uma parte de um array e retorna um novo array.
+some() - Verifica se algum dos elementos de um array passa em um teste.
+sort() - Ordena os elementos de um array.
+splice() - Adiciona ou remove elementos de um array.
+toString() - Converte um array em uma string e retorna o resultado.
+unshift() - Adiciona novos elementos no início de um array e retorna o novo comprimento.
+valueOf() - Retorna o valor primitivo de um array.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+
+<p>Exiba o valor de Boolean(10 > 9)</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Boolean(10 > 9);
+</script>
+
+</body>
+</html>
+
+saída:
+JavaScript Booleans
+
+Exiba o valor de Boolean(10 > 9)
+
+true
+
+Os booleanos de JavaScript podem ter um de dois valores: true ou false.
+constructor - Retorna a função que criou o protótipo do Boolean em JavaScript.
+prototype - Permite adicionar propriedades e métodos ao protótipo do Boolean.
+toString() - Converte um valor booleano em uma string e retorna o resultado.
+valueOf() - Retorna o valor primitivo de um valor booleano.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Instruções JavaScript</h1>
+<h2>A declaração de classe</h2>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this.carName = brand;
+  }
+}
+
+myCar = new Car("Ford");
+document.getElementById("demo").innerHTML = "Meu carro é um " + myCar.carName;
+</script>
+
+</body>
+</html>
+
+saída:
+Instruções JavaScript
+A declaração de classe
+
+Meu carro é um Ford
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Datas</h2>
+
+<p>new Date() cria um novo objeto de data com a data e hora atuais:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+saída:
+JavaScript Datas
+
+new Date() cria um novo objeto de data com a data e hora atuais:
+
+Wed May 31 2023 09:51:27 GMT-0300 (Horário Padrão de Brasília)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p>JavaScript armazena datas em milissegundos a partir de 1º de janeiro de 1970.</p>
+
+<p>100000000000 milissegundos a partir de 1º de janeiro de 1970 é aproximadamente 3 de março de 1973:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date(100000000000);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+saída:
+JavaScript new Date()
+
+JavaScript armazena datas em milissegundos a partir de 1º de janeiro de 1970.
+
+100000000000 milissegundos a partir de 1º de janeiro de 1970 é aproximadamente 3 de março de 1973:
+
+Sat Mar 03 1973 06:46:40 GMT-0300 (Horário Padrão de Brasília)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p>Crie uma data usando a notação ISO:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date("2015-03-25");
+document.getElementById("demo").innerHTML = d;</script>
+
+</body>
+</html>
+
+saída:
+JavaScript new Date()
+
+Crie uma data usando a notação ISO:
+
+Tue Mar 24 2015 21:00:00 GMT-0300 (Horário Padrão de Brasília)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p>new Date(7 números) cria um objeto de data com a data e hora especificadas:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+saída: 
+JavaScript new Date()
+
+new Date(7 números) cria um objeto de data com a data e hora especificadas:
+
+Mon Dec 24 2018 10:33:30 GMT-0200 (Horário de Verão de Brasília)
+    
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Erros de JavaScript</h1>
+<p>Neste exemplo, escrevemos "alert" como "adddlert" para produzir um erro deliberadamente.</p>
+<p>A propriedade name do objeto Error retorna o nome do erro e a propriedade message retorna uma descrição do erro:</p>
+
+<p id="demo" style="color:red"></p>
+
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = 
+  err.name + "<br>" + err.message;
+}
+</script>
+
+</body>
+</html>
+
+saída:
+Erros de JavaScript
+
+Neste exemplo, escrevemos "alert" como "adddlert" para produzir um erro deliberadamente.
+
+A propriedade name do objeto Error retorna o nome do erro e a propriedade message retorna uma descrição do erro:
+
+ReferenceError
+adddlert is not defined
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Converta um objeto JavaScript em uma string JSON e envie-o para o servidor.</h2>
+
+<script>
+var myObj = { "name":"John", "age":31, "city":"New York" };
+var myJSON = JSON.stringify(myObj);
+window.location = "demo_json.php?x=" + myJSON;
+</script>
+
+</body>
+</html>
+
+saída:
+demo_json.php:
+John from New York is 31
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Converta uma string escrita no formato JSON em um objeto JavaScript.</h2>
+
+<p id="demo"></p>
+
+<script>
+var myJSON = '{ "name":"John", "age":31, "city":"New York" }';
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
+</script>
+
+</body>
+</html>
+
+saída:
+Converta uma string escrita no formato JSON em um objeto JavaScript.
+
+John
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Armazene e recupere dados do armazenamento local.</h2>
+
+<p id="demo"></p>
+
+<script>
+var myObj, myJSON, text, obj;
+
+//Storing data:
+myObj = { "name":"John", "age":31, "city":"New York" };
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+
+//Retrieving data:
+text = localStorage.getItem("testJSON");
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.name;
+</script>
+
+</body>
+</html>
+
+saída:
+
+Armazene e recupere dados do armazenamento local.
+
+John
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<p>Math.PI retorna PI:</p>
+<p id="piDemo"></p>
+
+<p>Math.sqrt(16) retorna a raiz quadrada de 16:</p>
+<p id="sqrtDemo"></p>
+
+<script>
+document.getElementById("piDemo").innerHTML = Math.PI;
+document.getElementById("sqrtDemo").innerHTML = Math.sqrt(16);
+</script>
+
+</body>
+</html>
+
+
+saída:
+
+JavaScript Math
+
+Math.PI retorna PI:
+
+3.141592653589793
+
+Math.sqrt(16) retorna a raiz quadrada de 16:
+
+4
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Números JavaScript</h2>
+
+<p>Os números podem ser escritos com ou sem casas decimais:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 3.14;
+let y = 3;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+</body>
+</html>
+
+saída:
+Números JavaScript
+
+Os números podem ser escritos com ou sem casas decimais:
+
+3.14
+3
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Números JavaScript</h2>
+
+<p>Números muito grandes ou muito pequenos podem ser escritos com notação científica (expoente):</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123e5;
+let y = 123e-5;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+</body>
+</html>
+
+saída:
+
+Números JavaScript
+
+Números muito grandes ou muito pequenos podem ser escritos com notação científica (expoente):
+
+12300000
+0.00123
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Objetos JavaScript</h2>
+<p>Criando um objeto JavaScript:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " tem " + person.age + " anos.";
+</script>
+
+</body>
+</html>
+
+saída: 
+
+Objetos JavaScript
+
+Criando um objeto JavaScript:
+
+John tem 50 anos.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Aritmética JavaScript</h1>
+<h2>Precedência do Operador</h2>
+<p>A multiplicação tem precedência sobre a adição.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 100 + 50 * 3;
+</script>
+
+</body>
+</html>
+
+saída:
+
+Aritmética JavaScript
+Precedência do Operador
+
+A multiplicação tem precedência sobre a adição.
+
+250
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Aritmética JavaScript</h1>
+<h2>Precedência do Operador</h2>
+<p>A multiplicação tem precedência sobre a adição.</p>
+<p>Mas os parênteses têm precedência sobre a multiplicação.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = (100 + 50) * 3;
+</script>
+
+</body>
+</html>
+
+saída:
+Aritmética JavaScript
+Precedência do Operador
+
+A multiplicação tem precedência sobre a adição.
+
+Mas os parênteses têm precedência sobre a multiplicação.
+
+450
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Aritmética JavaScript</h1>
+<h2>Precedência do Operador</h2>
+<p>Quando muitas operações têm a mesma precedência, elas são calculadas da esquerda para a direita.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 100 / 50 * 3;
+</script>
+
+</body>
+</html>
+
+saída:
+
+Aritmética JavaScript
+Precedência do Operador
+
+Quando muitas operações têm a mesma precedência, elas são calculadas da esquerda para a direita.
+
+6
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Expressões Regulares JavaScript</h2>
+
+<p>Faça uma pesquisa sem distinção entre maiúsculas e minúsculas por "w3schools" em uma string:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Visit W3Schools";
+let pattern = /w3schools/i;
+let result = text.match(pattern);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
+
+saída:
+
+Expressões Regulares JavaScript
+
+Faça uma pesquisa sem distinção entre maiúsculas e minúsculas por "w3schools" em uma string:
+
+W3Schools
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Minha página Web</h1>
+
+<p id="demo">Meu primeiro parágrafo.</p>
+
+<script>
+document.getElementById("demo").innerHTML = "Olá Dolly.";
+</script>
+
+</body>
+</html>
+
+saída:
+
+Minha página Web
+
+Olá Dolly.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Sequências de caracteres JavaScript</h1>
+
+<p>Strings são escritas entre aspas simples ou duplas:</p>
+
+<p id="demo"></p>
+
+<script>
+let carName1 = "Volvo XC60";  // Aspas duplas
+let carName2 = 'Volvo XC60';  // Aspas simples
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
+</script>
+
+</body>
+</html>
+
+saída:
+
+Sequências de caracteres JavaScript
+
+Strings são escritas entre aspas simples ou duplas:
+
+Volvo XC60 Volvo XC60
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Arrays digitados em JavaScript</h1>
+<h2>O objeto Int8Array</h2>
+
+<p id="demo"></p>
+
+<script>
+const myArr = new Int8Array(10);
+document.getElementById("demo").innerHTML = myArr;
+</script>
+
+</body>
+</html>
+
+saída:
+
+Arrays digitados em JavaScript
+O objeto Int8Array
+
+0,0,0,0,0,0,0,0,0,0
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto do console</h1>
+<h2>O método error()</h2>
+<p>Lembre-se de abrir o console (pressione F12) antes de clicar em "Executar".</p>
+
+<script>
+window.console.error("Você cometeu um erro");
+</script>
+
+</body>
+</html>
+
+
+saída:
+
+O objeto do console
+O método error()
+
+Lembre-se de abrir o console (pressione F12) antes de clicar em "Executar".
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto de histórico da janela</h1>
+<h2>A propriedade history.length</h2>
+
+<p>Número de URLs na lista de histórico:</p>
+<p id="demo"></p>
+
+<p>Como este é um novo quadro de janela, history.length sempre retornará 1.</p>
+
+<script>
+let length = history.length;
+document.getElementById("demo").innerHTML = length;
+</script>
+
+</body>
+</html>
+
+saída:
+
+O objeto de histórico da janela
+A propriedade history.length
+
+Número de URLs na lista de histórico:
+
+2
+
+Como este é um novo quadro de janela, history.length sempre retornará 1.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto de localização da janela</h1>
+<h2>A propriedade de origem</h2>
+
+<p id="demo"></p>
+
+<script>
+let origin = window.location.origin;
+document.getElementById("demo").innerHTML = origin;
+</script>
+
+</body>
+</html>
+
+saída:
+
+O objeto de localização da janela
+A propriedade de origem
+
+https://www.w3schools.com
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>O objeto Window Navigator</h1>
+<h2>A propriedade do idioma</h2>
+
+<p id="demo"></p>
+
+<script>
+let language = window.navigator.language;
+document.getElementById("demo").innerHTML = "Browser language: " + language;
+</script>
+
+</body>
+</html>
+
+saída:
+
+O objeto Window Navigator
+A propriedade do idioma
+
+Browser language: pt-BR
+
+availHeight - Retorna a altura da tela (excluindo a barra de tarefas do Windows)
+availWidth - Retorna a largura da tela (excluindo a barra de tarefas do Windows)
+colorDepth - Retorna a profundidade de bits da paleta de cores para exibição de imagens
+height - Retorna a altura total da tela
+pixelDepth - Retorna a resolução de cor (em bits por pixel) da tela
+width - Retorna a largura total da tela
+
+ -->
+
+
+
