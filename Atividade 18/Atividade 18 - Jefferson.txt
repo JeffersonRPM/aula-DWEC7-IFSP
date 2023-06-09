@@ -1,0 +1,690 @@
+<!-- Atividade B -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Exercício dia 14 </title>
+    <script>
+// Início da seção de script
+    </script>
+</head>
+
+<body>
+    <h1>
+        <font color="#FF0000"> Formulário:
+    </h1>
+    <form action="/action_page.php">
+        <font color="#151515">
+            <p> Nome: <input type="text" id="nome" onfocus="myFunction(this.id) " onblur="Function(this.id)"> </p>
+            <br>
+            <p> Endereço: <input type="text" id="endereco" onfocus="myFunction(this.id)" onblur="Function(this.id)">
+            </p>
+            <br>
+            <p> Cidade: <input type="text" id="cidade" onfocus="myFunction(this.id)" onblur="Function(this.id)"> </p>
+            <br>
+            <p> Estado: <input type="text" id="estado" onfocus="myFunction(this.id)" onblur="Function(this.id)"> </p>
+            <br>
+            <p> Gênero: <input type="text" id="genero" onfocus="myFunction(this.id)" onblur="Function(this.id)"> </p>
+            <br>
+            <p> Idade: <input type="text" id="idade" onfocus="myFunction(this.id)" onblur="Function(this.id)"> </p>
+    </form>
+    <script>
+        // Início da segunda seção de script
+        function myFunction(x) {
+            // Altera o plano de fundo do campo atual para vermelho
+            document.getElementById(x).style.background = "red";
+        }
+
+        function Function(y) {
+            // Altera o plano de fundo do campo atual para branco
+            document.getElementById(y).style.background = "white";
+
+            // Obtém os valores dos campos de entrada de texto e converte em letras maiúsculas
+            var x = document.getElementById("nome");
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("endereco");
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("cidade");
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("estado");
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("genero");
+            x.value = x.value.toUpperCase();
+
+            var x = document.getElementById("idade");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+    <p> </p>
+</body>
+
+</html>
+
+<!-- Atividade C -->
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- O código abaixo cria um cabeçalho (h1) com o texto "Passe o mouse sobre este texto". Quando o cursor do mouse passa por cima do texto, a cor do texto é alterada para vermelho. Quando o cursor sai do texto, a cor do texto volta para preto. -->
+    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Passe o mouse sobre este texto</h1>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- O código abaixo cria um botão com o texto "Que horas são?" e um parágrafo vazio. Quando o botão é clicado, a função onclick é acionada. Essa função utiliza o método getElementById para obter o elemento com o id "demo" e alterar o seu conteúdo interno (innerHTML) para a data atual (Date()). O resultado da data atual será exibido no parágrafo. -->
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Que horas são?</button>
+
+    <p id="demo"></p>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            // A função myFunction é definida neste trecho de código. Quando é acionada, ela realiza as seguintes operações:
+            // - Obtém o elemento com o id "fname" usando o método getElementById e o armazena na variável x.
+            // - Utiliza a propriedade value para obter o valor do elemento (o texto digitado pelo usuário).
+            // - Utiliza o método toUpperCase() para transformar o valor em letras maiúsculas.
+            // - Atribui o valor em letras maiúsculas de volta ao elemento usando a propriedade value.
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+    Digite o seu nome: <input type="text" id="fname" onblur="myFunction()">
+
+    <p>Quando você sai do campo de entrada, uma função é acionada e transforma o texto digitado em letras maiúsculas.
+    </p>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            // A função myFunction é definida neste trecho de código. Quando é acionada, ela exibe um alerta com o texto "Você pressionou uma tecla dentro do campo de entrada".
+            alert("Você pressionou uma tecla dentro do campo de entrada");
+        }
+    </script>
+</head>
+
+<body>
+    <p>Uma função é acionada quando o usuário pressiona uma tecla no campo de entrada.</p>
+    <input type="text" onkeydown="myFunction()">
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function message() {
+            // A função message é definida neste trecho de código. Quando é acionada, ela exibe um alerta com o texto "Esta caixa de alerta foi acionada pelo manipulador de eventos onreset".
+            alert("Esta caixa de alerta foi acionada pelo manipulador de eventos onreset");
+        }
+    </script>
+</head>
+
+<body>
+    <form onreset="message()">
+        Digite o seu nome: <input type="text" size="20">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
+<!-- O código acima cria um formulário com um campo de entrada de texto e um botão de resetar (reset). Quando o botão de resetar é clicado, o evento onreset é acionado. Esse evento chama a função message, que exibe um alerta com a mensagem "Esta caixa de alerta foi acionada pelo manipulador de eventos onreset". Assim, quando o formulário é resetado, o alerta é exibido. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function WhichButton(event) {
+            // A função WhichButton é definida neste trecho de código. Ela recebe um parâmetro event que contém informações sobre o evento ocorrido.
+            // Quando a função é acionada, ela exibe um alerta com o texto "Você pressionou o botão:" seguido do número do botão pressionado (event.button).
+            alert("Você pressionou o botão: " + event.button);
+        }
+    </script>
+</head>
+
+<body>
+    <div onmousedown="WhichButton(event);">Clique neste texto (com um dos seus botões do mouse)
+        <p>
+            0 Especifica o botão esquerdo do mouse<br>
+            1 Especifica o botão do meio do mouse<br>
+            2 Especifica o botão direito do mouse</p>
+        <p><strong>Nota:</strong> O Internet Explorer 8, e versões anteriores, retornam um resultado diferente:<br>
+            1 Especifica o botão esquerdo do mouse<br>
+            4 Especifica o botão do meio do mouse<br>
+            2 Especifica o botão direito do mouse</p>
+    </div>
+</body>
+
+</html>
+<!-- O código acima cria uma div que contém um texto e informações sobre os botões do mouse.
+Quando o usuário pressiona um dos botões do mouse dentro dessa div, o evento onmousedown é acionado e chama a função WhichButton passando o objeto evento como parâmetro.
+A função WhichButton exibe um alerta mostrando qual botão do mouse foi pressionado, representado pelo valor event.button.
+Os valores geralmente são: 0 para o botão esquerdo, 1 para o botão do meio e 2 para o botão direito do mouse.
+No entanto, é importante observar que o Internet Explorer 8 e versões anteriores têm um comportamento ligeiramente diferente em relação aos valores retornados para os botões do mouse.  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function show_coords(event) {
+            // A função show_coords é definida neste trecho de código. Ela recebe um parâmetro event que contém informações sobre o evento ocorrido.
+            // Quando a função é acionada, ela utiliza o método getElementById para obter o elemento com o id "demo" e atualiza o seu conteúdo interno (innerHTML).
+            // O conteúdo é composto pelas coordenadas x e y do ponteiro do mouse, acessadas através das propriedades clientX e clientY do objeto evento.
+            document.getElementById("demo").innerHTML =
+                "X= " + event.clientX + "<br>Y= " + event.clientY;
+        }
+    </script>
+</head>
+
+<body>
+    <p onmousedown="show_coords(event)">
+        Clique neste parágrafo para exibir as coordenadas x e y do ponteiro do mouse.</p>
+    <p id="demo"></p>
+</body>
+
+</html>
+<!-- O código acima cria um parágrafo que exibe as coordenadas x e y do ponteiro do mouse quando o usuário clica nele.
+Quando o usuário clica no parágrafo, o evento onmousedown é acionado e chama a função show_coords passando o objeto evento como parâmetro.
+A função show_coords utiliza o método getElementById para obter o elemento com o id "demo" (no caso, o segundo parágrafo vazio) e atualiza o seu conteúdo interno (innerHTML).
+O conteúdo exibido é composto pelas coordenadas x e y do ponteiro do mouse, acessadas através das propriedades clientX e clientY do objeto evento. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>O que o JavaScript pode fazer?</h2>
+    <p id="demo">JavaScript pode alterar o conteúdo HTML.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Olá JavaScript!"'>Clique em
+        Mim!</button>
+
+</body>
+
+</html>
+<!-- O código acima cria um parágrafo com o id "demo" que exibe um texto. Também há um botão com o texto "Clique em Mim!".
+Quando o botão é clicado, o atributo onclick aciona uma função que utiliza o método getElementById para obter o elemento com o id "demo" e atualizar o seu conteúdo interno (innerHTML).
+O conteúdo é alterado para "Olá JavaScript!".
+Assim, ao clicar no botão, o texto exibido no parágrafo será substituído por "Olá JavaScript!". Isso demonstra como o JavaScript pode alterar o conteúdo HTML dinamicamente. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>O que o JavaScript pode fazer?</h2>
+    <p id="demo">JavaScript pode alterar o estilo de um elemento HTML.</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Clique em Mim!</button>
+
+</body>
+
+</html>
+<!-- O código acima cria um parágrafo com o id "demo" que exibe um texto. Também há um botão com o texto "Clique em Mim!".
+Quando o botão é clicado, o atributo onclick aciona uma função que utiliza o método getElementById para obter o elemento com o id "demo" e alterar o seu estilo.
+O estilo do elemento é modificado definindo a propriedade fontSize para '35px', o que aumenta o tamanho da fonte para 35 pixels.
+Dessa forma, ao clicar no botão, o estilo do parágrafo é alterado e o tamanho da fonte é aumentado.
+Isso demonstra como o JavaScript pode alterar o estilo de um elemento HTML dinamicamente. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Math.PI</h2>
+    <p>Math.PI retorna a razão entre a circunferência de um círculo e seu diâmetro:</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = Math.PI;
+    </script>
+</body>
+
+</html>
+<!-- O código acima exibe o valor de Math.PI, que representa a constante matemática π (pi).
+O parágrafo com o id "demo" é utilizado para mostrar o valor de Math.PI.
+Dentro do elemento <script>, o valor de Math.PI é atribuído ao conteúdo interno (innerHTML) do parágrafo usando o método getElementById.
+Dessa forma, o valor de π (pi) é exibido no parágrafo.
+Isso demonstra como o JavaScript pode realizar cálculos matemáticos e exibir os resultados em um elemento HTML. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Celsius para Fahrenheit</h2>
+    <p>Insira um número em um dos campos de entrada abaixo:</p>
+    <p><input id="c" onkeyup="convert('C')"> graus Celsius</p>
+    <p><input id="f" onkeyup="convert('F')"> graus Fahrenheit</p>
+    <p>Observe que o método <b>Math.round()</b> é utilizado para que o resultado seja retornado como um número inteiro.
+    </p>
+    <script>
+        function convert(degree) {
+            var x;
+            if (degree == "C") {
+                // A função convert é definida neste trecho de código. Ela recebe um parâmetro degree que indica a escala de temperatura.
+                // Se a escala for "C" (Celsius), a função realiza as seguintes operações:
+                // - Obtém o valor inserido no campo de entrada com id "c" e o converte para Fahrenheit usando a fórmula (C * 9/5) + 32.
+                // - Atribui o valor convertido para Fahrenheit ao campo de entrada com id "f" usando o método getElementById.
+                // - O valor é arredondado usando o método Math.round() para retornar um número inteiro.
+                x = document.getElementById("c").value * 9 / 5 + 32;
+                document.getElementById("f").value = Math.round(x);
+            } else {
+                // Se a escala for "F" (Fahrenheit), a função realiza as seguintes operações:
+                // - Obtém o valor inserido no campo de entrada com id "f" e o converte para Celsius usando a fórmula (F - 32) * 5/9.
+                // - Atribui o valor convertido para Celsius ao campo de entrada com id "c" usando o método getElementById.
+                // - O valor é arredondado usando o método Math.round() para retornar um número inteiro.
+                x = (document.getElementById("f").value - 32) * 5 / 9;
+                document.getElementById("c").value = Math.round(x);
+            }
+        }
+    </script>
+</body>
+
+</html>
+<!-- O código acima permite a conversão entre Celsius e Fahrenheit. Existem dois campos de entrada: um para Celsius e outro para Fahrenheit.
+Quando um valor é inserido em um dos campos e ocorre o evento onkeyup (quando uma tecla é liberada), a função convert é acionada.
+A função convert recebe um parâmetro degree que indica a escala de temperatura a ser convertida.
+Se a escala for "C" (Celsius), o valor inserido no campo de entrada Celsius é convertido para Fahrenheit usando a fórmula (C * 9/5) + 32.
+O resultado é atribuído ao campo de entrada Fahrenheit e arredondado usando o método Math.round() para exibir um número inteiro.
+Se a escala for "F" (Fahrenheit), o valor inserido no campo de entrada Fahrenheit é convertido para Celsius usando a fórmula (F - 32) * 5/9.
+O resultado é atribuído ao campo de entrada Celsius e arredondado usando o método Math.round() para exibir um número inteiro.
+Assim, é possível converter valores de Celsius para Fahrenheit e vice-versa dinamicamente. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+        <input type="button" id="btn01" value="OK">
+    </form>
+    <p>Clique no botão "Desabilitar" para desativar o botão "OK":</p>
+    <button onclick="disableElement()">Desabilitar</button>
+
+    <script>
+        function disableElement() {
+            // A função disableElement é definida neste trecho de código. Ela não recebe nenhum parâmetro.
+            // Quando o botão "Desabilitar" é clicado, o atributo onclick aciona a função disableElement.
+            // A função utiliza o método getElementById para obter o elemento com o id "btn01" (o botão "OK") e define a propriedade disabled como true.
+            // Isso desativa o botão, impedindo que ele seja clicado ou receba qualquer interação do usuário.
+            document.getElementById("btn01").disabled = true;
+        }
+    </script>
+</body>
+
+</html>
+<!-- O código acima exibe um formulário contendo um botão com o id "btn01" e o valor "OK".
+A seguir, há um parágrafo que instrui o usuário a clicar no botão "Desabilitar" para desativar o botão "OK".
+Quando o botão "Desabilitar" é clicado, o atributo onclick aciona a função disableElement.
+A função disableElement utiliza o método getElementById para obter o elemento com o id "btn01" (o botão "OK") e define a propriedade disabled como true.
+Isso desativa o botão, impedindo que ele seja clicado ou receba qualquer interação do usuário.
+Dessa forma, o botão "OK" fica inativo após o botão "Desabilitar" ser clicado.
+Isso demonstra como o JavaScript pode alterar o estado e o comportamento dos elementos HTML. -->    
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function disable() {
+            // A função disable é definida neste trecho de código. Ela não recebe nenhum parâmetro.
+            // Quando o botão "Disable list" é clicado, o atributo onclick aciona a função disable.
+            // A função utiliza o método getElementById para obter o elemento com o id "mySelect" (a lista suspensa) e define a propriedade disabled como true.
+            // Isso desativa a lista suspensa, impedindo que o usuário faça seleções ou interaja com ela.
+            document.getElementById("mySelect").disabled = true;
+        }
+        function enable() {
+            // A função enable é definida neste trecho de código. Ela não recebe nenhum parâmetro.
+            // Quando o botão "Enable list" é clicado, o atributo onclick aciona a função enable.
+            // A função utiliza o método getElementById para obter o elemento com o id "mySelect" (a lista suspensa) e define a propriedade disabled como false.
+            // Isso habilita novamente a lista suspensa, permitindo que o usuário faça seleções e interaja com ela.
+            document.getElementById("mySelect").disabled = false;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <select id="mySelect">
+            <option>Maçã</option>
+            <option>Pera</option>
+            <option>Banana</option>
+            <option>Laranja</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="disable()" value="Desabilitar lista">
+        <input type="button" onclick="enable()" value="Habilitar lista">
+    </form>
+</body>
+
+</html>
+<!-- O código acima exibe um formulário contendo uma lista suspensa (select) com o id "mySelect" e várias opções.
+Em seguida, há dois botões: "Desabilitar lista" e "Habilitar lista".
+Quando o botão "Desabilitar lista" é clicado, o atributo onclick aciona a função disable.
+A função disable utiliza o método getElementById para obter o elemento com o id "mySelect" (a lista suspensa) e define a propriedade disabled como true.
+Isso desativa a lista suspensa, impedindo que o usuário faça seleções ou interaja com ela.
+Quando o botão "Habilitar lista" é clicado, o atributo onclick aciona a função enable.
+A função enable utiliza o método getElementById para obter o elemento com o id "mySelect" (a lista suspensa) e define a propriedade disabled como false.
+Isso habilita novamente a lista suspensa, permitindo que o usuário faça seleções e interaja com ela.
+Dessa forma, é possível desabilitar e habilitar a lista suspensa de acordo com a interação do usuário.
+Isso demonstra como o JavaScript pode alterar o estado e o comportamento dos elementos HTML. -->    
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <iframe id="myframe" src="demo_iframe.htm">
+        <p>Seu navegador não suporta iframes.</p>
+    </iframe>
+    <p>Clique no botão para alterar a cor de fundo do documento dentro do iframe.</p>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Testar</button>
+
+    <script>
+        function myFunction() {
+            // A função myFunction é definida neste trecho de código. Ela não recebe nenhum parâmetro.
+            // Quando o botão "Testar" é clicado, o atributo onclick aciona a função myFunction.
+            // A função utiliza o método getElementById para obter o elemento com o id "myframe" (o iframe).
+            // Em seguida, a propriedade style.backgroundColor é definida como "red", alterando a cor de fundo do documento dentro do iframe para vermelho.
+            var x = document.getElementById("myframe");
+            x.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>
+<!-- O código acima exibe um iframe com o id "myframe" e uma mensagem de fallback caso o navegador não suporte iframes.
+A seguir, há um parágrafo que instrui o usuário a clicar no botão para alterar a cor de fundo do documento dentro do iframe.
+Quando o botão "Testar" é clicado, o atributo onclick aciona a função myFunction.
+A função myFunction utiliza o método getElementById para obter o elemento com o id "myframe" (o iframe).
+Em seguida, a propriedade style.backgroundColor é definida como "red", alterando a cor de fundo do documento dentro do iframe para vermelho.
+Isso demonstra como o JavaScript pode manipular elementos dentro de um iframe, modificando suas propriedades e comportamento.
+Note que o arquivo "demo_iframe.htm" é referenciado como o conteúdo do iframe, mas seu conteúdo real não é mostrado no código fornecido. -->    
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            // A função myFunction é definida neste trecho de código. Ela não recebe nenhum parâmetro.
+            // Quando o parágrafo é clicado duas vezes (evento ondblclick), o atributo ondblclick aciona a função myFunction.
+            // A função utiliza o método getElementById para obter o elemento com o id "demo" (outro parágrafo vazio) e define o seu conteúdo como "Hello World".
+            // Dessa forma, quando o parágrafo é clicado duas vezes, o texto "Hello World" é inserido no parágrafo com o id "demo".
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
+</head>
+
+<body>
+    <p ondblclick="myFunction()">Clique duas vezes neste parágrafo para acionar uma função.</p>
+    <p id="demo"></p>
+</body>
+
+</html>
+<!-- O código acima exibe dois parágrafos. O primeiro parágrafo possui o atributo ondblclick, que aciona a função myFunction quando o parágrafo é clicado duas vezes.
+A função myFunction utiliza o método getElementById para obter o elemento com o id "demo", que é o segundo parágrafo vazio.
+Em seguida, a função define o conteúdo do parágrafo "demo" como "Hello World", inserindo esse texto no parágrafo.
+Portanto, quando o primeiro parágrafo é clicado duas vezes, a função é acionada e o texto "Hello World" é exibido no segundo parágrafo.
+Isso demonstra como o JavaScript pode responder a eventos, como o duplo clique, e manipular o conteúdo dos elementos HTML. -->
+
+<!-- Atividade D -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Retângulo</title>
+    <script>
+        function calcularRetangulo() {
+            // Obtém os valores digitados pelo usuário
+            var largura = parseFloat(document.getElementById("largura").value);
+            var comprimento = parseFloat(document.getElementById("comprimento").value);
+            var altura = parseFloat(document.getElementById("altura").value);
+
+            // Calcula o perímetro, a área e o volume
+            var perimetro = (largura + comprimento) * 2;
+            var area = largura * comprimento;
+            var volume = largura * comprimento * altura;
+
+            // Exibe os resultados na página
+            document.getElementById("resultadoPerimetro").textContent = "Perímetro: " + perimetro.toFixed(2);
+            document.getElementById("resultadoArea").textContent = "Área: " + area.toFixed(2);
+            document.getElementById("resultadoVolume").textContent = "Volume: " + volume.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Calculadora de Retângulo</h1>
+    <form>
+        <label for="largura">Largura:</label>
+        <input type="number" id="largura" required>
+        <br><br>
+        <label for="comprimento">Comprimento:</label>
+        <input type="number" id="comprimento" required>
+        <br><br>
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" required>
+        <br><br>
+        <button type="button" onclick="calcularRetangulo()">Calcular</button>
+    </form>
+    <h2>Resultados:</h2>
+    <div id="resultadoPerimetro"></div>
+    <div id="resultadoArea"></div>
+    <div id="resultadoVolume"></div>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Círculo</title>
+    <script>
+        function calcularCirculo() {
+            // Obter o valor do raio digitado pelo usuário
+            var raio = parseFloat(document.getElementById("raio").value);
+
+            // Calcular o perímetro, a área e o diâmetro
+            var perimetro = 2 * Math.PI * raio;
+            var area = Math.PI * Math.pow(raio, 2);
+            var diametro = 2 * raio;
+
+            // Exibir os resultados na página
+            document.getElementById("resultadoPerimetro").textContent = "Perímetro: " + perimetro.toFixed(2);
+            document.getElementById("resultadoArea").textContent = "Área: " + area.toFixed(2);
+            document.getElementById("resultadoDiametro").textContent = "Diâmetro: " + diametro.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Calculadora de Círculo</h1>
+    <form>
+        <label for="raio">Raio:</label>
+        <input type="number" id="raio" required>
+        <br><br>
+        <button type="button" onclick="calcularCirculo()">Calcular</button>
+    </form>
+    <h2>Resultados:</h2>
+    <div id="resultadoPerimetro"></div>
+    <div id="resultadoArea"></div>
+    <div id="resultadoDiametro"></div>
+</body>
+
+</html>
+
+
+<!-- Atividade E -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cronômetro</title>
+    <script>
+        var cronometro;
+        var tempoInicial;
+        var tempoPausado = 0;
+
+        function iniciarCronometro() {
+            tempoInicial = new Date().getTime() - tempoPausado;
+            cronometro = setInterval(atualizarTempo, 10);
+            document.getElementById("botaoIniciar").disabled = true;
+            document.getElementById("botaoParar").disabled = false;
+            document.getElementById("botaoZerar").disabled = true;
+        }
+
+        function pararCronometro() {
+            clearInterval(cronometro);
+            document.getElementById("botaoIniciar").disabled = false;
+            document.getElementById("botaoParar").disabled = true;
+            document.getElementById("botaoZerar").disabled = false;
+        }
+
+        function zerarCronometro() {
+            clearInterval(cronometro);
+            document.getElementById("tempo").textContent = "00:00:00.000";
+            document.getElementById("botaoIniciar").disabled = false;
+            document.getElementById("botaoParar").disabled = true;
+            document.getElementById("botaoZerar").disabled = true;
+            tempoPausado = 0;
+        }
+
+        function atualizarTempo() {
+            var tempoAtual = new Date().getTime();
+            var tempoDecorrido = tempoAtual - tempoInicial;
+            var horas = Math.floor(tempoDecorrido / 3600000);
+            var minutos = Math.floor((tempoDecorrido % 3600000) / 60000);
+            var segundos = Math.floor((tempoDecorrido % 60000) / 1000);
+            var milissegundos = tempoDecorrido % 1000;
+            document.getElementById("tempo").textContent = formatarNumero(horas) + ":" + formatarNumero(minutos) + ":" + formatarNumero(segundos) + "." + formatarNumero(milissegundos, 3);
+        }
+
+        function formatarNumero(numero, digitos = 2) {
+            var numeroFormatado = numero.toString();
+            while (numeroFormatado.length < digitos) {
+                numeroFormatado = "0" + numeroFormatado;
+            }
+            return numeroFormatado;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cronômetro</h1>
+    <div id="tempo">00:00:00.000</div>
+    <br>
+    <button id="botaoIniciar" onclick="iniciarCronometro()">Iniciar</button>
+    <button id="botaoParar" onclick="pararCronometro()" disabled>Parar</button>
+    <button id="botaoZerar" onclick="zerarCronometro()" disabled>Zerar</button>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora Científica</title>
+    <style>
+        #calculator {
+            width: 300px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+
+        #display {
+            width: 95%;
+            height: 40px;
+            text-align: right;
+            padding: 5px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .button {
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <button class="button" onclick="appendToDisplay('7')">7</button>
+        <button class="button" onclick="appendToDisplay('8')">8</button>
+        <button class="button" onclick="appendToDisplay('9')">9</button>
+        <button class="button" onclick="appendToDisplay('/')">/</button>
+        <br>
+        <button class="button" onclick="appendToDisplay('4')">4</button>
+        <button class="button" onclick="appendToDisplay('5')">5</button>
+        <button class="button" onclick="appendToDisplay('6')">6</button>
+        <button class="button" onclick="appendToDisplay('*')">*</button>
+        <br>
+        <button class="button" onclick="appendToDisplay('1')">1</button>
+        <button class="button" onclick="appendToDisplay('2')">2</button>
+        <button class="button" onclick="appendToDisplay('3')">3</button>
+        <button class="button" onclick="appendToDisplay('-')">-</button>
+        <br>
+        <button class="button" onclick="appendToDisplay('0')">0</button>
+        <button class="button" onclick="appendToDisplay('.')">.</button>
+        <button class="button" onclick="calculateResult()">=</button>
+        <button class="button" onclick="appendToDisplay('+')">+</button>
+        <br>
+        <button class="button" onclick="clearDisplay()">C</button>
+    </div>
+
+    <script>
+        function appendToDisplay(value) {
+            var display = document.getElementById("display");
+            display.value += value;
+        }
+
+        function calculateResult() {
+            var display = document.getElementById("display");
+            var result = eval(display.value);
+            display.value = result;
+        }
+
+        function clearDisplay() {
+            var display = document.getElementById("display");
+            display.value = "";
+        }
+    </script>
+</body>
+
+</html>
