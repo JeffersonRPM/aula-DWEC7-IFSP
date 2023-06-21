@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B4</title>
+
+</head>
+
+<body>
+    <script>
+        function calcularValores() {
+            
+            var nome = document.getElementById("nome").value;
+            var endereco = document.getElementById("endereco").value;
+            var peso = document.getElementById("peso").value;
+            var altura = document.getElementById("altura").value;
+
+            var imc = peso / (altura * altura);
+
+            document.getElementById("resultado-n1").innerHTML = "Nome: " + nome;
+            document.getElementById("resultado-n2").innerHTML = "Endereço: " + endereco;
+            document.getElementById("resultado-n3").innerHTML = "IMC: " + imc.toFixed(2);
+        }
+    </script>
+
+    <h2>B4. Fazer um programa para pedir o nome, endereço, peso (inteiro), altura, e calcular o IMC, como sendo o peso dividido pelo quadrado da altura. Mostrar estes dados na tela.</h2>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+    <br><br>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco">
+    <br><br>
+
+    <label for="peso">Peso:</label>
+    <input type="number" id="peso">
+    <br><br>
+    
+    <label for="altura">Altura:</label>
+    <input type="number" id="altura">
+
+    <br><br>
+
+    <button onclick="calcularValores()">Calcular</button>
+
+    <br><br>
+
+    <div id="resultado-n1"></div>
+    <div id="resultado-n2"></div>
+    <div id="resultado-n3"></div>
+
+    <br><br><br><br><br><br><br><br>
+    <p>Jefferson Roberto Piaia Martines - PC3015602</p>
+    <p>Murilo Formaggio Feliciano - PC3006875</p>
+
+
+</body>
+
+</html>
