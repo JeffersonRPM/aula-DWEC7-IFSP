@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4</title>
+
+</head>
+
+<body>
+    <script>
+        function calcularValores() {
+            var x = parseFloat(document.getElementById("valor-x").value);
+            var y = parseFloat(document.getElementById("valor-y").value);
+            var z = parseFloat(document.getElementById("valor-z").value);
+
+            var n1 = 8 * x + 12 * y - 50;
+            var n2 = 8 * y - 5 * x + 15 * z - 10;
+            var n3 = 25 * x - 15 * y + 12 * z;
+
+            document.getElementById("resultado-n1").textContent = "n1 = " + n1.toFixed([2]);
+            document.getElementById("resultado-n2").textContent = "n2 = " + n2.toFixed([2]);
+            document.getElementById("resultado-n3").textContent = "n3 = " + n3.toFixed([2]);
+        }
+    </script>
+
+    <h2>A4. Fazer um programa para x, y, z e calcular n1, n2, n3, conforme as fórmulas n1 = 8x + 12y - 50, n2 = 8y - 5x + 15z - 10 e n3 = 25x – 15y + 12z;</h2>
+
+    <label for="valor-x">Valor de x:</label>
+    <input type="number" id="valor-x">
+    <br><br>
+
+    <label for="valor-y">Valor de y:</label>
+    <input type="number" id="valor-y">
+    <br><br>
+
+    <label for="valor-z">Valor de z:</label>
+    <input type="number" id="valor-z">
+
+    <br><br>
+
+    <button onclick="calcularValores()">Calcular</button>
+
+    <br><br>
+
+    <div id="resultado-n1"></div>
+    <div id="resultado-n2"></div>
+    <div id="resultado-n3"></div>
+
+    <br><br><br><br><br><br><br><br>
+    <p>Jefferson Roberto Piaia Martines - PC3015602</p>
+    <p>Murilo Formaggio Feliciano - PC3006875</p>
+
+
+</body>
+
+</html>
